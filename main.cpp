@@ -12,7 +12,9 @@ int main(){
     int n;
     cin >> n;
     vector<long long> fibok(n + 1, -1);
-    long long result = fibonacci(n, fibok);
-    cout  << result << endl;
+    for (int i = 1; i <= n; i++) {
+    	long long result = fibonacci(i, fibok);
+    	cout << result<< endl;
+    }
     return 0;
 }
